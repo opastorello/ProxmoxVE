@@ -1,0 +1,35 @@
+{
+    "name": "GLPI",
+    "slug": "glpi",
+    "categories": [
+      0
+    ],
+    "date_created": "2024-12-17",
+    "type": "ct",
+    "updateable": true,
+    "privileged": false,
+    "interface_port": 80,
+    "documentation": "https://glpi-project.org/documentation/",
+    "website": "https://glpi-project.org/",
+    "logo": "https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png",
+    "description": "GLPI is a Free Asset and IT Management Software package, Data center management, ITIL Service Desk, licenses tracking and software auditing.",
+    "install_methods": [
+      {
+        "type": "default",
+        "script": "ct/glpi.sh",
+        "resources": {
+          "cpu": 1,
+          "ram": 1024,
+          "hdd": 10,
+          "os": "debian",
+          "version": "12"
+        }
+      }
+    ],
+    "default_credentials": {
+      "username": "glpi",
+      "password": "glpi"
+    },
+    "notes": []
+  }
+  
