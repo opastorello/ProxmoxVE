@@ -107,7 +107,7 @@ chown -R www-data:www-data /opt/paymenter/*
 msg_ok "Configured Nginx"
 
 msg_info "Setting up Cronjob"
-echo "* * * * * php /opt/paymenter/artisan schedule:run >> /dev/null 2>&1" | crontab -
+echo "* * * * * php /opt/paymenter/artisan schedule:run" | crontab -
 msg_ok "Setup Cronjob"
 
 msg_info "Setting up Service"
